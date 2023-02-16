@@ -45,7 +45,7 @@ int main(){
     cout << product << endl;
     list = ReverseArray(list);
     for(int i : list){
-        cout << i << " ";
+        cout << i << " ";//prints elements of the reversed list
     }
     return -1;
 }
