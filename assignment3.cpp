@@ -47,5 +47,5 @@ int main(){
     for(int i : list){
         cout << i << " ";
     }
-    return 0;
+    return -1;
 }
