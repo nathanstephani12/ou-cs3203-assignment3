@@ -10,3 +10,11 @@ int ArraySum(vector<int> arr){
     }
     return sum;
 }
+
+int ArrayProduct(vector<int> arr){
+    int product = 1;
+    for(int i : arr){
+        product *= i;//multiplies each element by each other
+    }
+    return product;
+}
