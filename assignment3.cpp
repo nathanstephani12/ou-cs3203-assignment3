@@ -19,6 +19,20 @@ int ArrayProduct(vector<int> arr){
     return product;
 }
 
+vector<int> ReverseArray(vector<int> arr){
+    int temp = 0;
+    int front = 0;
+    int back = size(arr) - 1;
+    while(front < back){
+        temp = arr[front];
+        arr[front] = arr[back];
+        arr[back] = temp;
+        front++;
+        back--;
+    }
+    return arr;
+}
+
 int main(){
     vector<int> list = {};
     int input;
@@ -33,5 +47,5 @@ int main(){
     for(int i : list){
         cout << i << " ";
     }
-    return 0;
+    return -1;
 }
